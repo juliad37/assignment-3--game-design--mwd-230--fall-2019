@@ -10,6 +10,6 @@ void setup () {
 void draw () {
   background(100);
   drawObstacle();
-  
+  drawObstacle2();
   drawCreature();
 }
