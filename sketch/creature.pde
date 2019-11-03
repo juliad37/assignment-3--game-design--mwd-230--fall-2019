@@ -1,6 +1,6 @@
 void drawCreature () {
   noStroke();
-  rect(creatureTopLeftCorner[X], creatureTopLeftCorner[Y], WIDTH, WIDTH);
+  rect(creatureTopLeftCorner[X], creatureTopLeftCorner[Y], CAT_WIDTH, CAT_WIDTH);
 }
 
 void moveCreature (int direction) {
@@ -8,7 +8,7 @@ void moveCreature (int direction) {
     case UP: {
       creaturesTopEdge = (creatureTopLeftCorner[Y] - MOVE_FACTOR);
       creaturesLeftEdge = (creatureTopLeftCorner[X]);
-      creaturesRightEdge = (creatureTopLeftCorner[X] + WIDTH);
+      creaturesRightEdge = (creatureTopLeftCorner[X] + CAT_WIDTH);
 
       if (collisionOccursWhenCreatureIsMoved(UP)) {
         crashSound.play();
@@ -22,8 +22,8 @@ void moveCreature (int direction) {
 
     case RIGHT: {
       creaturesTopEdge = (creatureTopLeftCorner[Y]);
-      creaturesRightEdge = (creatureTopLeftCorner[X] + WIDTH + MOVE_FACTOR);
-      creaturesBottomEdge = (creatureTopLeftCorner[Y] + HEIGHT);
+      creaturesRightEdge = (creatureTopLeftCorner[X] + CAT_WIDTH + MOVE_FACTOR);
+      creaturesBottomEdge = (creatureTopLeftCorner[Y] + CAT_HEIGHT);
 
       if (collisionOccursWhenCreatureIsMoved(RIGHT)) {
         crashSound.play();
@@ -36,9 +36,9 @@ void moveCreature (int direction) {
     }
 
     case DOWN: {
-      creaturesBottomEdge = (creatureTopLeftCorner[Y] + HEIGHT + MOVE_FACTOR);
+      creaturesBottomEdge = (creatureTopLeftCorner[Y] + CAT_HEIGHT + MOVE_FACTOR);
       creaturesLeftEdge = (creatureTopLeftCorner[X]);
-      creaturesRightEdge = (creatureTopLeftCorner[X] + WIDTH);
+      creaturesRightEdge = (creatureTopLeftCorner[X] + CAT_WIDTH);
 
       if (collisionOccursWhenCreatureIsMoved(DOWN)) {
         crashSound.play();
@@ -53,7 +53,7 @@ void moveCreature (int direction) {
     case LEFT: {
       creaturesTopEdge = (creatureTopLeftCorner[Y]);
       creaturesLeftEdge = (creatureTopLeftCorner[X] - MOVE_FACTOR);
-      creaturesBottomEdge = (creatureTopLeftCorner[Y] + HEIGHT);
+      creaturesBottomEdge = (creatureTopLeftCorner[Y] + CAT_HEIGHT);
 
       if (collisionOccursWhenCreatureIsMoved(LEFT)) {
         crashSound.play();
