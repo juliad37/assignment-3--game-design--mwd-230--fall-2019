@@ -12,5 +12,6 @@ void draw () {
   drawObstacle();
   drawObstacle2();
   drawObstacle3();
+  drawObstacle4();
   drawCreature();
 }
