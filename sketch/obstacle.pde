@@ -1,4 +1,4 @@
 void drawObstacle () {
   noStroke();
-  rect(obstacleTopLeftCorner[X], obstacleTopLeftCorner[Y], HEIGHT, WIDTH);
+  rect(obstacleTopLeftCorner[X], obstacleTopLeftCorner[Y], MOUSE_WIDTH, MOUSE_WIDTH);
 }
