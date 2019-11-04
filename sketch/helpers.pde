@@ -26,6 +26,22 @@ boolean collisionOccursWhenCreatureIsMoved(int direction) {
           result = true;
         }
       }
+      
+      //obstacle 4
+      if ((creaturesTopEdge <= OBSTACLE4_BOTTOM_EDGE) && (creaturesTopEdge >= OBSTACLE4_TOP_EDGE)) {
+        if ((creaturesRightEdge >= OBSTACLE4_LEFT_EDGE) && (creaturesRightEdge <= OBSTACLE4_RIGHT_EDGE)
+            || (creaturesLeftEdge <= OBSTACLE4_RIGHT_EDGE) && (creaturesLeftEdge >= OBSTACLE4_LEFT_EDGE)) {
+          result = true;
+        }
+      }
+      
+      //obstacle 5
+      if ((creaturesTopEdge <= OBSTACLE5_BOTTOM_EDGE) && (creaturesTopEdge >= OBSTACLE5_TOP_EDGE)) {
+        if ((creaturesRightEdge >= OBSTACLE5_LEFT_EDGE) && (creaturesRightEdge <= OBSTACLE5_RIGHT_EDGE)
+            || (creaturesLeftEdge <= OBSTACLE5_RIGHT_EDGE) && (creaturesLeftEdge >= OBSTACLE5_LEFT_EDGE)) {
+          result = true;
+        }
+      }
 
       break;
 
@@ -50,6 +66,22 @@ boolean collisionOccursWhenCreatureIsMoved(int direction) {
       if ((creaturesRightEdge >= OBSTACLE3_LEFT_EDGE) && (creaturesRightEdge <= OBSTACLE3_LEFT_EDGE)) {
         if ((creaturesTopEdge >= OBSTACLE3_TOP_EDGE) && (creaturesTopEdge <= OBSTACLE3_BOTTOM_EDGE)
             || (creaturesBottomEdge <= OBSTACLE3_BOTTOM_EDGE) && (creaturesBottomEdge >= OBSTACLE3_TOP_EDGE)) {
+          result = true;
+        }
+      }
+      
+      //obstacle 4
+      if ((creaturesRightEdge >= OBSTACLE4_LEFT_EDGE) && (creaturesRightEdge <= OBSTACLE4_LEFT_EDGE)) {
+        if ((creaturesTopEdge >= OBSTACLE4_TOP_EDGE) && (creaturesTopEdge <= OBSTACLE4_BOTTOM_EDGE)
+            || (creaturesBottomEdge <= OBSTACLE4_BOTTOM_EDGE) && (creaturesBottomEdge >= OBSTACLE4_TOP_EDGE)) {
+          result = true;
+        }
+      }
+      
+      //obstacle 5
+      if ((creaturesRightEdge >= OBSTACLE5_LEFT_EDGE) && (creaturesRightEdge <= OBSTACLE5_LEFT_EDGE)) {
+        if ((creaturesTopEdge >= OBSTACLE5_TOP_EDGE) && (creaturesTopEdge <= OBSTACLE5_BOTTOM_EDGE)
+            || (creaturesBottomEdge <= OBSTACLE5_BOTTOM_EDGE) && (creaturesBottomEdge >= OBSTACLE5_TOP_EDGE)) {
           result = true;
         }
       }
@@ -80,6 +112,22 @@ boolean collisionOccursWhenCreatureIsMoved(int direction) {
           result = true;
         }
       }
+      
+      //obstacle 4
+      if ((creaturesBottomEdge >= OBSTACLE4_TOP_EDGE) && (creaturesBottomEdge <= OBSTACLE4_BOTTOM_EDGE)) {
+        if ((creaturesRightEdge >= OBSTACLE4_LEFT_EDGE) && (creaturesRightEdge <= OBSTACLE4_RIGHT_EDGE)
+            || (creaturesLeftEdge <= OBSTACLE4_RIGHT_EDGE) && (creaturesLeftEdge >= OBSTACLE4_LEFT_EDGE)) {
+          result = true;
+        }
+      }
+      
+      //obstacle 5
+      if ((creaturesBottomEdge >= OBSTACLE5_TOP_EDGE) && (creaturesBottomEdge <= OBSTACLE5_BOTTOM_EDGE)) {
+        if ((creaturesRightEdge >= OBSTACLE5_LEFT_EDGE) && (creaturesRightEdge <= OBSTACLE5_RIGHT_EDGE)
+            || (creaturesLeftEdge <= OBSTACLE5_RIGHT_EDGE) && (creaturesLeftEdge >= OBSTACLE5_LEFT_EDGE)) {
+          result = true;
+        }
+      }
 
 
       break;
@@ -104,6 +152,22 @@ boolean collisionOccursWhenCreatureIsMoved(int direction) {
        if ((creaturesLeftEdge <= OBSTACLE3_RIGHT_EDGE) && (creaturesLeftEdge >= OBSTACLE3_LEFT_EDGE)) {
         if ((creaturesTopEdge >= OBSTACLE3_TOP_EDGE) && (creaturesTopEdge <= OBSTACLE3_BOTTOM_EDGE)
             || (creaturesBottomEdge <= OBSTACLE3_BOTTOM_EDGE) && (creaturesBottomEdge >= OBSTACLE3_TOP_EDGE)) {
+          result = true;
+        }
+      }
+      
+       //obstacle 4
+       if ((creaturesLeftEdge <= OBSTACLE4_RIGHT_EDGE) && (creaturesLeftEdge >= OBSTACLE4_LEFT_EDGE)) {
+        if ((creaturesTopEdge >= OBSTACLE4_TOP_EDGE) && (creaturesTopEdge <= OBSTACLE4_BOTTOM_EDGE)
+            || (creaturesBottomEdge <= OBSTACLE4_BOTTOM_EDGE) && (creaturesBottomEdge >= OBSTACLE4_TOP_EDGE)) {
+          result = true;
+        }
+      }
+      
+       //obstacle 5
+       if ((creaturesLeftEdge <= OBSTACLE5_RIGHT_EDGE) && (creaturesLeftEdge >= OBSTACLE5_LEFT_EDGE)) {
+        if ((creaturesTopEdge >= OBSTACLE5_TOP_EDGE) && (creaturesTopEdge <= OBSTACLE5_BOTTOM_EDGE)
+            || (creaturesBottomEdge <= OBSTACLE5_BOTTOM_EDGE) && (creaturesBottomEdge >= OBSTACLE5_TOP_EDGE)) {
           result = true;
         }
       }
