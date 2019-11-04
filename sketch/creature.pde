@@ -1,5 +1,6 @@
 void drawCreature () {
   noStroke();
+  fill(173, 216, 230);
   rect(creatureTopLeftCorner[X], creatureTopLeftCorner[Y], CAT_WIDTH, CAT_WIDTH);
 }
 
